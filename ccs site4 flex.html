@@ -4,34 +4,44 @@
         .header {
             background-color: black;
             color: white;
+            margin: 0;
         }
         .leftpan {
             background-color: aqua;
             display: flex;
-            flex-grow: 1;
+            width: 250px;
+            flex-shrink: 0;
+            flex-direction: column;
     
         }
         .rightpan {
             background-color: brown;
             flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .main {
             display: flex;
             height: 100vh;
-            flex-direction: column;
         }
-        .baby {
-            flex-grow: 1;
+        .leftbaby {
             display: flex;
+            align-items: center;
         }
     </style>
 </head>
 <body style="margin: 0;">
+    <h1 class="header">HEAD</h1>
     <div class="main">
-        <div class="header">HEAD</div>
-        <div class="baby">
-            <div class="leftpan">LEFT</div>
-            <div class="rightpan">RIGHT</div>
+        <div class="leftpan">
+            <div class="leftbaby"><img width="45px" height="45px" src="https://instagram-my.ru/wp-content/uploads/2019/12/icon-inastagram-4.png" alt=""><h2>LEFT1</h2></div>
+            <div class="leftbaby"><img width="45px" height="45px" src="https://instagram-my.ru/wp-content/uploads/2019/12/icon-inastagram-4.png" alt=""><h2>LEFT2</h2></div>
+            <div class="leftbaby"><img width="45px" height="45px" src="https://instagram-my.ru/wp-content/uploads/2019/12/icon-inastagram-4.png" alt=""><h2>LEFT3</h2></div>
+            <div class="leftbaby"><img width="45px" height="45px" src="https://instagram-my.ru/wp-content/uploads/2019/12/icon-inastagram-4.png" alt=""><h2>LEFT4</h2></div>
         </div>
-    </div>    
+        <div class="rightpan">
+            <h2>RIGHT</h2>
+        </div>
+    </div>
 </body>
