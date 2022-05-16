@@ -1,0 +1,83 @@
+<head>
+    <style>
+        .main {
+            display: flex;
+            height: 100vh;
+        }
+        .leftbar {
+            background: darkcyan;
+            width: 200px;
+            padding-left: 20px;
+        }
+        .rightbar {
+            background: burlywood;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .text {
+            border-radius: 10px;
+            width: max-content;
+            padding: 20px;
+            background: wheat;
+            display: flex;
+            justify-content: flex-end;
+            bottom: 5px;
+            margin: 15px;
+        }
+        .center1 {
+            display: flex;
+            width: 300px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: column;
+            }
+        .center2 {
+            display: flex;
+            width: 300px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            flex-direction: column;
+            }
+        .center3 {
+            display: flex;
+            width: 300px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: column;
+            }
+        .center4 {
+            display: flex;
+            width: 300px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            flex-direction: column;
+            }
+    </style>
+</head>
+<body style="margin: 0%;">
+    <div class="main">
+        <div class="leftbar">
+            <p>Левая панель</p>
+        </div>
+        <div class="rightbar">
+            <div class="center1">
+                <div class="text">Привет</div>
+                <div class="text">Как дела?</div>
+            </div>
+            <div class="center2">
+                <div class="text">Привет</div>
+                <div class="text">Да хорошо! Спасибо!</div>
+                <div class="text">Ты как?</div>
+            </div>
+            <div class="center3">
+                <div class="text">Отлично. Что нового?</div>
+                <div class="text">Да все по старому...</div>
+            </div>
+            <div class="center4">
+                <div class="text">Понятно</div>
+            </div>
+        </div>
+    </div>
+</body>
