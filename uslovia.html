@@ -1,8 +1,50 @@
+<!-- Стрельба. Условие попасть в диапазон 28-30 -->
+<script>
+    let chislo = +prompt("Стреляй! Вдруг попадешь :)")
+
+    if (chislo >= 28 === chislo <= 30 ) {
+       console.log("Попал")
+    } else {
+        console.log("Не попал")
+    }
+</script>
+
+<!-- Вводят 2 числа. Вывести их сумму, если первое меньше второго числа и разницу, если нет -->
+<script>
+    let chislo = +prompt("Введи первое число")
+    let chislo2 = +prompt("Введите второе число")
+
+    if (chislo < chislo2) {
+       console.log(chislo + chislo2)
+    }  else {
+        console.log(chislo - chislo2)
+    }
+</script>
+
+
+<!-- Вывести целое число, которое делится на 3 и 6 -->
 <script>
     let chislo = +prompt("Введи целое число")
+    let ocrug = Math.round(chislo)
+    let three = ocrug / 3
+    let six = ocrug / 6
+    let sPr = Math.round(ocrug / 3)
+    let tPr = Math.round(ocrug / 6) 
 
-    if (chislo < 10 || chislo > 20 || chislo % 2 === 0) {
-        console.log(chislo*chislo)
+    if (sPr === three || tPr ===  six) {
+       console.log("Четное число, которое делится на 3 и 6")
+    }  else {
+        console.log("Не четное число")
+    }
+</script>
+
+<!-- Вывести целое число, которое не попадает в диапозон 10 - 20 -->
+<script>
+    let chislo = +prompt("Введи целое число")
+    let ocrug = Math.round(chislo)
+
+    if (ocrug < 10 || ocrug > 20 || ocrug % 2 === 0) {
+       console.log(ocrug*ocrug)
     }  else {
         console.log("Не четное число")
     }
