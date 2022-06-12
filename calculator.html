@@ -1,0 +1,37 @@
+<!-- калькулятор v1 -->
+
+<script>
+    let number1 = +prompt("Введите первой число");
+    let schet = prompt("Какой расчет произвести далее(сумма, вычитание, умножение, деление)")
+    let number2 = +prompt("Введите второе число для расчета");
+    
+    typeof number1;
+    typeof number2;
+
+    let del = number1 / number2;
+    let summa = number1 + number2;
+    let minus = number1 - number2;
+    let umn = number1 * number2;
+
+    let s1 = "сумма";
+    let s2 = "Сумма";
+    let d1 = "деление";
+    let d2 = "Деление";
+    let m1 = "минус";
+    let m2 = "Минус";
+    let u1 = "умножение";
+    let u2 = "Умножение";
+
+    if (schet === s1 || schet === s2) {
+        console.log("Сумма =", summa)
+    } else if (schet === m1 || schet === m2) {
+        console.log("Вычитание =", minus)
+    } else if (schet === u1 || schet === u2) {
+        console.log("Умножение =", umn)
+    } else if (schet === d1 || schet === d2) {
+        console.log("Деление =", del)
+    } else {
+        console.log("Не верная команда. Повторите снова. Подсказка в скобках")
+    }
+    
+</script>
