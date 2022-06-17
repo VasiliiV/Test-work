@@ -2,6 +2,7 @@
 let x = 0
 let y = [3, "rock-3", 4, "rock-6", 5, "rock-9"]
 
+
 while (x < 10) {
     x++
     if (x === y[0]) {
@@ -14,4 +15,5 @@ while (x < 10) {
         console.log(y[4])   
     }
 }
+
 </script>
