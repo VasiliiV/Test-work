@@ -1,0 +1,33 @@
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="text">
+            <h1>Hi</h1>
+            <ul>
+                <li id="1">Как ты?</li>
+                <li id="2">Чем занимаешься?</li>
+            </ul>
+            <input type="text">
+            <button>Жмяк</button>
+         </div>
+            </body>
+    <script>
+        const cl = document.getElementsByTagName('input');
+        cl[0].addEventListener('input', (cl) => {
+            const lif = document.getElementsByTagName('li')[0];
+            lif.innerText = cl.data;
+            console.log(lif.innerText);
+    });
+    const btm = document.getElementsByTagName('button');
+        btm[0].addEventListener('click', (e) => {
+        console.log(e.type + " " + "Жмяк");
+    });
+    </script>
+    </html>
+</html>
